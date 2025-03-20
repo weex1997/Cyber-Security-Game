@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe454d4b9b7d9da41913e980827a77ae, type: 3}
+  m_Name: Question 4
+  m_EditorClassIdentifier: 
+  question: "\u0623\u064A \u0645\u0646 \u0647\u0630\u0647 \u0643\u0644\u0645\u0627\u062A
+    \u0645\u0631\u0648\u0631 \u0642\u0648\u064A\u0629\u061F"
+  category: PasswordCategory
+  answers:
+  - Aa136@
+  - "\u0661\u0662\u0663\u0664\u0665\u0666"
+  - "\u0623\u062D\u0645\u062F\u0662\u0660\u0661\u0662"

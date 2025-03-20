@@ -22,6 +22,11 @@ TagManager:
   - Privet
   - Password
   - CardComputer
+  - PasswordCategory
+  - ShieldCategory
+  - CardCategory
+  - iPad
+  - StopWall
   layers:
   - Default
   - TransparentFX

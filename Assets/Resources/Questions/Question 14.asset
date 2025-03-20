@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe454d4b9b7d9da41913e980827a77ae, type: 3}
+  m_Name: Question 14
+  m_EditorClassIdentifier: 
+  question: "\u0643\u0645 \u0645\u0631\u0629 \u064A\u062C\u0628 \u062A\u063A\u064A\u064A\u0631
+    \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631\u061F"
+  category: PasswordCategory
+  answers:
+  - "\u0628\u0635\u0648\u0631\u0629 \u062F\u0648\u0631\u064A\u0629 (\u0643\u0644
+    \u0634\u0647\u0631\u064A\u0646) \u0627\u0648 \u0639\u0646\u062F \u0627\u0644\u0634\u0643
+    \u0628\u0623\u0646\u0647 \u062A\u0645 \u0627\u062E\u062A\u0631\u0627\u0642\u0647\u0627."
+  - "\u0644\u0627 \u0623\u063A\u064A\u0651\u0631\u0647\u0627 \u0623\u0628\u062F\u064B\u0627"
+  - "\u0645\u0631\u0629 \u0648\u0627\u062D\u062F\u0629 \u0639\u0646\u062F \u0625\u0646\u0634\u0627\u0626\u0647\u0627"

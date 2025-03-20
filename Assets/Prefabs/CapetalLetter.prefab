@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6440707018402513700}
   - component: {fileID: 1396534595082154505}
   - component: {fileID: 9095684996316272592}
+  - component: {fileID: 3646830945275011527}
   m_Layer: 5
   m_Name: CapetalLetter
   m_TagString: Password
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1007048434, guid: 9212983a6f16413419906749e787e2a0, type: 3}
+  m_Sprite: {fileID: -1049917869, guid: 9212983a6f16413419906749e787e2a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,5 +91,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1396534595082154505}
   parentAfterDrag: {fileID: 0}
-  parentBeforeDrag: {fileID: 0}
-  collidedmesh: 
+--- !u!114 &3646830945275011527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560840169963578733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a37e65fa078d645b075cdda8e2b313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
