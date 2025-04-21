@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Stage2Rules : MonoBehaviour
 {
@@ -36,6 +37,12 @@ public class Stage2Rules : MonoBehaviour
             gunShots.start = true;
             spawner.start = true;
             stopDialogue = false;
+        }
+
+        // Skip if clicking a UI element
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
         }
 
         if (Input.GetMouseButtonDown(0))

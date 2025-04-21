@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 269167924}
   - component: {fileID: 269167923}
   - component: {fileID: 269167922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Symblscomputer
   m_TagString: SymbelsBox
   m_Icon: {fileID: 0}
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2773,7 +2773,7 @@ GameObject:
   - component: {fileID: 969481338}
   - component: {fileID: 969481337}
   - component: {fileID: 969481339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Letterscomputer '
   m_TagString: LettersBox
   m_Icon: {fileID: 0}
@@ -3978,7 +3978,7 @@ GameObject:
   - component: {fileID: 1615903031}
   - component: {fileID: 1615903030}
   - component: {fileID: 1615903029}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Numberscomputer
   m_TagString: NumbersBox
   m_Icon: {fileID: 0}
@@ -4874,7 +4874,7 @@ GameObject:
   - component: {fileID: 1783224635}
   - component: {fileID: 1783224637}
   - component: {fileID: 1783224636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ipad
   m_TagString: iPad
   m_Icon: {fileID: 0}
@@ -5778,7 +5778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940116398}
   - component: {fileID: 1940116400}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

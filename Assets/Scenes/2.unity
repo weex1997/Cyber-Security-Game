@@ -476,7 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420745787}
   - component: {fileID: 420745788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   - component: {fileID: 1258227145}
   - component: {fileID: 1258227146}
   - component: {fileID: 1258227147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Gun
   m_Icon: {fileID: 0}
@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 1469398778}
   - component: {fileID: 1469398779}
   - component: {fileID: 1469398780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1468,7 +1468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1603878205}
   - component: {fileID: 1603878206}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

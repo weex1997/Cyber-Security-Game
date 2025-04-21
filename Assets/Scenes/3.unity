@@ -471,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 156020372}
   - component: {fileID: 156020373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 1
   m_TagString: CardComputer
   m_Icon: {fileID: 0}
@@ -1026,7 +1026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787725958}
   - component: {fileID: 787725959}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 2
   m_TagString: CardComputer
   m_Icon: {fileID: 0}

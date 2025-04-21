@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Stage3Rules : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class Stage3Rules : MonoBehaviour
 
     void Update()
     {
+        // Skip if clicking a UI element
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
 

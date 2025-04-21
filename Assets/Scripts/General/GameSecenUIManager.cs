@@ -66,6 +66,8 @@ public class GameSecenUIManager : MonoBehaviour
     }
     public void Exit()
     {
+        Time.timeScale = 1;
+
         if (GameManager.Instance != null)
             GameManager.Instance.itExitButton = true;
         if (SceneManager.GetActiveScene().buildIndex == 1)

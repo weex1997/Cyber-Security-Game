@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 241071048}
   - component: {fileID: 241071050}
   - component: {fileID: 241071049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 3
   m_TagString: DoorClose
   m_Icon: {fileID: 0}
@@ -758,8 +758,8 @@ Transform:
   m_GameObject: {fileID: 241071047}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.84, y: -0.4778, z: -1703.0054}
-  m_LocalScale: {x: 0.91262096, y: 0.91262096, z: 0.91262096}
+  m_LocalPosition: {x: 55.07, y: 0.62, z: 0}
+  m_LocalScale: {x: 0.91262096, y: 0.91262096, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 784294496}
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 351397925}
   - component: {fileID: 351397926}
   - component: {fileID: 351397927}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lock1 (2)
   m_TagString: ShieldCategory
   m_Icon: {fileID: 0}
@@ -2007,7 +2007,7 @@ GameObject:
   - component: {fileID: 587752097}
   - component: {fileID: 587752096}
   - component: {fileID: 587752098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 1
   m_TagString: DoorClose
   m_Icon: {fileID: 0}
@@ -2075,8 +2075,8 @@ Transform:
   m_GameObject: {fileID: 587752095}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3928, y: -0.4778, z: -1703.0054}
-  m_LocalScale: {x: 0.91262096, y: 0.91262096, z: 0.91262096}
+  m_LocalPosition: {x: 19.84, y: 0.62, z: 0}
+  m_LocalScale: {x: 0.91262096, y: 0.91262096, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 784294496}
@@ -2097,7 +2097,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: -3
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2637,7 +2637,7 @@ Transform:
   m_GameObject: {fileID: 784294494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.217823, y: 1.1000783, z: 1703.0054}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3899,7 +3899,7 @@ GameObject:
   - component: {fileID: 1138895599}
   - component: {fileID: 1138895601}
   - component: {fileID: 1138895600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 2
   m_TagString: DoorClose
   m_Icon: {fileID: 0}
@@ -3915,8 +3915,8 @@ Transform:
   m_GameObject: {fileID: 1138895598}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.28, y: -0.4778, z: -1703.0054}
-  m_LocalScale: {x: 0.91262096, y: 0.91262096, z: 0.91262096}
+  m_LocalPosition: {x: 37.47, y: 0.62, z: 0}
+  m_LocalScale: {x: 0.91262096, y: 0.91262096, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 784294496}
@@ -4029,7 +4029,7 @@ GameObject:
   - component: {fileID: 1187858773}
   - component: {fileID: 1187858774}
   - component: {fileID: 1187858775}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lock1 (1)
   m_TagString: PasswordCategory
   m_Icon: {fileID: 0}
@@ -6227,7 +6227,7 @@ GameObject:
   - component: {fileID: 1645461968}
   - component: {fileID: 1645461969}
   - component: {fileID: 1645461970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lock1 (3)
   m_TagString: CardCategory
   m_Icon: {fileID: 0}
@@ -8943,8 +8943,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1203439656}
   - {fileID: 890140638}
-  - {fileID: 926330683}
   - {fileID: 784294496}
+  - {fileID: 926330683}
   - {fileID: 1471673216}
   - {fileID: 1016365679}
   - {fileID: 1404848015}

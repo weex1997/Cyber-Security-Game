@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Stage1Rules : MonoBehaviour
 {
@@ -34,6 +35,11 @@ public class Stage1Rules : MonoBehaviour
             finalComputerPanel.SetActive(true);
             hearts.SetActive(true);
             iPad.SetActive(true);
+        }
+        // Skip if clicking a UI element
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
         }
 
         if (Input.GetMouseButtonDown(0))

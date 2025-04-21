@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class DoorsSystem : MonoBehaviour
@@ -62,10 +63,17 @@ public class DoorsSystem : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
 
+            // Skip if clicking a UI element
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                return;
+            }
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit.collider != null)
             {
+
                 if (hit.collider.tag == "DoorOpen")
                 {
                     SceneManager.LoadScene(hit.collider.gameObject.name);
@@ -78,7 +86,6 @@ public class DoorsSystem : MonoBehaviour
             }
         }
     }
-
 
 
 }

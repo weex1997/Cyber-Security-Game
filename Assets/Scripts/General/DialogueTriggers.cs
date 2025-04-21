@@ -31,7 +31,7 @@ public class DialogueTriggers : MonoBehaviour
             DialogueBox.SetActive(true);
             DialogueText.text = DialogueString[clickNum];
             start = true;
-            SetAllCollidersInteract(false);
+            //SetAllCollidersInteract(false);
         }
 
     }
@@ -52,7 +52,7 @@ public class DialogueTriggers : MonoBehaviour
                 if (GameManager.Instance != null)
                     GameManager.Instance.dialogueCount++;
 
-                SetAllCollidersInteract(true);
+                //SetAllCollidersInteract(true);
 
                 Destroy(gameObject);
             }
@@ -60,14 +60,14 @@ public class DialogueTriggers : MonoBehaviour
         }
     }
 
-    //method for active or deactivating collider in the game to not conflict with the dialog
-    public void SetAllCollidersInteract(bool active)
-    {
-        BoxCollider2D[] clolliders = FindObjectsOfType<BoxCollider2D>();
+    // //method for active or deactivating collider in the game to not conflict with the dialog
+    // public void SetAllCollidersInteract(bool active)
+    // {
+    //     BoxCollider2D[] clolliders = FindObjectsOfType<BoxCollider2D>();
 
-        foreach (BoxCollider2D c in clolliders)
-        {
-            c.enabled = active;
-        }
-    }
+    //     foreach (BoxCollider2D c in clolliders)
+    //     {
+    //         c.enabled = active;
+    //     }
+    // }
 }

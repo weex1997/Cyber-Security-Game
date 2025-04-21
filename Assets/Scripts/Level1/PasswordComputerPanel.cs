@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using RTLTMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -91,7 +90,7 @@ public class PasswordComputerPanel : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.checkEndTheGame();
+            GameManager.Instance.LoseHeart();
             StartCoroutine(OpenTip());
         }
     }
