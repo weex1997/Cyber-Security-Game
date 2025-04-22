@@ -13,7 +13,7 @@ public class PlayerInteractions : MonoBehaviour
     }
     public void loseHeart()
     {
-        GameManager.Instance.LoseHeart();
+        GameManager.Instance.LoseHeart(1);
     }
 
 }

@@ -81,13 +81,14 @@ public class GameManager : MonoBehaviour
         else
             Winning();
     }
-    public void LoseHeart()
+    public void LoseHeart(int damage)
     {
         //sound
-        SoundManager.PlaySound(SoundType.LoseHeart);
-
-        Hearts[heartNum - 1].sprite = emptySprite;
-        heartNum--;
+        if (SoundManager.instance != null)
+            SoundManager.PlaySound(SoundType.LoseHeart);
+        if (damage < Hearts.Count)
+            Hearts[heartNum - damage].sprite = emptySprite;
+        heartNum -= damage;
         if (heartNum <= 0)
         {
             Losing();
@@ -97,13 +98,16 @@ public class GameManager : MonoBehaviour
     {
 
         //level time analysis
-        PlayerData.Instance.totalTime.startCustomTime = false;
+        if (PlayerData.Instance != null)
+            PlayerData.Instance.totalTime.startCustomTime = false;
 
         stopTimer = true;
-        loseScreen.SetActive(true);
+        if (loseScreen != null)
+            loseScreen.SetActive(true);
         itsLose = true;
         //sound
-        SoundManager.PlaySound(SoundType.Lose);
+        if (SoundManager.instance != null)
+            SoundManager.PlaySound(SoundType.Lose);
 
     }
     public void Winning()

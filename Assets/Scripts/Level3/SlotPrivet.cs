@@ -13,7 +13,7 @@ public class SlotPrivet : MonoBehaviour, IDropHandler
 
         if (dragDropUI.gameObject.tag != "Privet")
         {
-            GameManager.Instance.LoseHeart();
+            GameManager.Instance.LoseHeart(1);
             stage3Rules.runCorotine("WrongAnswer");
             GameManager.Instance.StartHint("يا الهي المعلومات الغير شخصيه ضائعه (تذكر انها ليست سرا) .");
         }

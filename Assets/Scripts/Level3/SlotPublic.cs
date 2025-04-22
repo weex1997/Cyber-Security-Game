@@ -12,7 +12,7 @@ public class SlotPublic : MonoBehaviour, IDropHandler
 
         if (dragDropUI.gameObject.tag != "Public")
         {
-            GameManager.Instance.LoseHeart();
+            GameManager.Instance.LoseHeart(1);
             stage3Rules.runCorotine("WrongAnswer");
             GameManager.Instance.StartHint("اه، هناك معلومات شخصية تتجول في خطر!");
         }

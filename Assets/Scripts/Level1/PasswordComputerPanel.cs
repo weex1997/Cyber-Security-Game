@@ -90,7 +90,7 @@ public class PasswordComputerPanel : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.LoseHeart();
+            GameManager.Instance.LoseHeart(1);
             StartCoroutine(OpenTip());
         }
     }
