@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class PlayerDataPanel : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class PlayerDataPanel : MonoBehaviour
     string playerAge;
     public List<GameObject> Panels = new List<GameObject>();
     public GameObject nextButton;
-    int nextPanel = 0;
+    public int nextPanel = 0;
     public int playerGender = 0;
     public GameObject messagesWindow;
     bool runOnce1 = false;
@@ -34,7 +35,7 @@ public class PlayerDataPanel : MonoBehaviour
             }
             else
             {
-                Panels[3].SetActive(true);
+                Panels[4].SetActive(true);
                 nextButton.SetActive(false);
             }
             runOnce1 = true;
@@ -92,22 +93,24 @@ public class PlayerDataPanel : MonoBehaviour
             }
 
         }
-        else if (nextPanel == 2)
+        else if (nextPanel == 3)
         {
             Panels[nextPanel].SetActive(false);
             nextPanel++;
             Panels[nextPanel].SetActive(true);
-
-        }
-        if (nextPanel == 2)
-        {
-
             nextButton.SetActive(false);
         }
 
         PlayerData.Instance.SaveDataToTheServier();
 
         SoundManager.PlaySound(SoundType.Buttons);
+    }
+
+    public void VideoIsFinished()
+    {
+        Panels[nextPanel].SetActive(false);
+        nextPanel++;
+        Panels[nextPanel].SetActive(true);
     }
 
 }

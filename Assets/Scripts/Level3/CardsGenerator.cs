@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using RTLTMPro;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,10 +12,9 @@ public class CardsGenerator : MonoBehaviour
 
     public GameObject cardPrefab;
     public Transform cardsParent;
-    string[] privet_info = {"Full name", "Street address", "Phone numbers", "Email addresses", "Birthdate", "School name",
-     "Usernames", "Passwords","Health information","Bank Information","Parent's Names","Guardian's Names" };
-    string[] public_info = {"First Name", "Hobbies", "Interests", "Favorite Animal", "Color", "Food",
-     "Non-Specific Locations", "School Projects","Achievements","Art ","Creative Work","Fun Facts","Opinions","General Age Range" };
+    string[] privet_info = { "الاسم الكامل", "عنوان المنزل", "عناوين البريد الإلكتروني", "اسم المدرسة", "كلمات المرور", "المعلومات الصحية", "معلومات الحساب البنكي", "معلومات العائله", "اسماء الوالدين" };
+    string[] public_info = {"الاسم الأول", "الهوايات", "اللون المفضل", "الحيوان المفضل", "الاطعمه المفضله",
+     "الممارسات الرياضية", "الطموحات المستقبلية","الكتب المفضله","الأعمال الإبداعية"};
     // Start is called before the first frame update
     void Start()
     {
@@ -36,13 +36,13 @@ public class CardsGenerator : MonoBehaviour
             {
                 case 0:
                     int rand_2 = Random.Range(0, cardsText_privet.Count);
-                    card.transform.GetChild(0).GetComponent<TMP_Text>().text = cardsText_privet[rand_2];
+                    card.transform.GetChild(0).GetComponent<RTLTextMeshPro>().text = cardsText_privet[rand_2];
                     card.tag = "Privet";
                     cardsText_privet.RemoveAt(rand_2);
                     break;
                 case 1:
                     int rand_3 = Random.Range(0, cardsText_public.Count);
-                    card.transform.GetChild(0).GetComponent<TMP_Text>().text = cardsText_public[rand_3];
+                    card.transform.GetChild(0).GetComponent<RTLTextMeshPro>().text = cardsText_public[rand_3];
                     card.tag = "Public";
                     cardsText_public.RemoveAt(rand_3);
                     break;

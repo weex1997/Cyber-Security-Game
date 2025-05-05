@@ -1,4 +1,5 @@
 
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +15,7 @@ public class FinalDoor : MonoBehaviour
     public GameObject winRobot;
     public GameObject[] locksObjects;
     public GameObject certificate;
+    public GameObject video;
     public float totalSuccessPercentage;
     float passLock;
     float shieldLock;
@@ -78,7 +80,7 @@ public class FinalDoor : MonoBehaviour
         }
         if (winRobot == null && !startOne)
         {
-            certificate.SetActive(true);
+            video.SetActive(true);
             startOne = true;
         }
         if (loseRobot == null && !startOne)
